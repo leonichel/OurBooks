@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "OurBooks-APP",
+    "name": "OurBooks",
+    "slug": "OurBooks",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -11,11 +11,11 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image":"./src/assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E9EEF6"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,7 +24,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+	  "supportsTablet": true,
+	  "infoPlist":{
+		  "UIBackgroundModes":["audio"]
+	  }
     }
   }
 }
